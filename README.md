@@ -2,9 +2,11 @@
 
 > **Think Like an Engineer:** A Neuro‑Symbolic Collaboration Agent for Generative Software Requirements Elicitation and Self‑Review
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)  [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org)
 
 RequireCEG is a neuro‑symbolic collaboration agent that *thinks like an engineer* to automatically generate, elicit, and self‑review software requirements.
+
+> **🚧 Project Status:** The codebase is currently being cleaned up; core components will be released incrementally. Stay tuned!
 
 ---
 
@@ -13,7 +15,6 @@ RequireCEG is a neuro‑symbolic collaboration agent that *thinks like an engine
 * [Demo](#demo)
 * [Datasets](#datasets)
 * [Method Outputs](#method-outputs)
-* [Citation](#citation)
 * [License](#license)
 
 ---
@@ -80,3 +81,9 @@ Methods Output/
 ```
 
 </details>
+
+---
+
+## License
+
+This project is licensed under the [Apache License 2.0](LICENSE).
