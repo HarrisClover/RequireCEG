@@ -1,32 +1,82 @@
-RequireCEG **README**
+# RequireCEG
 
-**Demo Video**: RequireCEG-Demo.mp4  **Demo Output**: Demo_Output
+> **Think Like an Engineer:** A Neuro‑Symbolic Collaboration Agent for Generative Software Requirements Elicitation and Self‑Review
 
-**Dataset**
-1. RGPair Dataset\RGPair.json - 40 repositories, 413 feature files with 40 natural language narratives.
-2. Mini-RG Dataset\Mini-RG.json - 12 feature with 12 natural language narratives.
-3. Pub-website Dataset\Pub-website.json - five public website with 5 narratives and 96 primary functions.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org)
 
-The file contains the output of the different methods and the experimental results:
-**Output results** (Methods Output)
-1. Output of the AgileGen method on two datasets
-    - Methods Output\AgileGen_Outputs\RGPair
-    - Methods Output\AgileGen_Outputs\Mini-RG
-2. Output of the CoT method on two datasets
-    - Methods Output\CoT_Outputs\RGPair
-    - Methods Output\CoT_Outputs\Mini-RG
-3. Output of the Gemini-2.5-pro method on two datasets
-    - Methods Output\Gemini-2.5-pro_Outputs\RGPair
-    - Methods Output\Gemini-2.5-pro_Outputs\Mini-RG
-4. Output of the MetaGPT method on two datasets
-    - Methods Output\MetaGPT_Outputs\RGPair
-    - Methods Output\MetaGPT_Outputs\Mini-RG
-5. Output of the o3-mini method on two datasets
-    - Methods Output\o3-mini_Outputs\RGPair
-    - Methods Output\o3-mini_Outputs\MiniRG
-6. Output of the RequireLite method on two datasets
-    - Methods Output\RequireLite_Outputs\RGPair
-    - Methods Output\RequireLite_Outputs\Mini-RG
-7. Output of the RequireCEG method on two datasets
-    - Methods Output\RequireCEG_Outputs\RGPair
-    - Methods Output\RequireCEG_Outputs\Mini-RG
+RequireCEG is a neuro‑symbolic collaboration agent that *thinks like an engineer* to automatically generate, elicit, and self‑review software requirements.
+
+---
+
+## Table of Contents
+
+* [Demo](#demo)
+* [Datasets](#datasets)
+* [Method Outputs](#method-outputs)
+* [Citation](#citation)
+* [License](#license)
+
+---
+
+## Demo
+
+| Artifact           | File                                           |
+| ------------------ | ---------------------------------------------- |
+| 🎥 **Demo Video**  | [`RequireCEG-Demo.mp4`](./RequireCEG-Demo.mp4) |
+| 📄 **Demo Output** | [`Demo_Output`](./Demo_Output)                 |
+
+<details>
+<summary>Directory tree</summary>
+
+```text
+.
+├── RequireCEG-Demo.mp4
+└── Demo_Output/
+    └── ...
+```
+
+</details>
+
+---
+
+## Datasets
+
+| Dataset         | Path                       | Contents                                                             |
+| --------------- | -------------------------- | -------------------------------------------------------------------- |
+| **RGPair**      | `Dataset/RGPair.json`      | 40 repositories · 413 feature files · 40 natural‑language narratives |
+| **Mini‑RG**     | `Dataset/Mini-RG.json`     | 12 feature files · 12 natural‑language narratives                    |
+| **Pub‑website** | `Dataset/Pub-website.json` | 5 public websites · 5 narratives · 96 primary functions              |
+
+---
+
+## Method Outputs
+
+<details>
+<summary>Directory tree</summary>
+
+```text
+Methods Output/
+├── AgileGen_Outputs/
+│   ├── RGPair/
+│   └── Mini-RG/
+├── CoT_Outputs/
+│   ├── RGPair/
+│   └── Mini-RG/
+├── Gemini-2.5-pro_Outputs/
+│   ├── RGPair/
+│   └── Mini-RG/
+├── MetaGPT_Outputs/
+│   ├── RGPair/
+│   └── Mini-RG/
+├── o3-mini_Outputs/
+│   ├── RGPair/
+│   └── MiniRG/
+├── RequireLite_Outputs/
+│   ├── RGPair/
+│   └── Mini-RG/
+└── RequireCEG_Outputs/
+    ├── RGPair/
+    └── Mini-RG/
+```
+
+</details>
