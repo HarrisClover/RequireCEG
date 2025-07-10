@@ -1,0 +1,4 @@
+1. As a car buyer, I want to quickly filter used cars based on my preferences so that I can find relevant options efficiently.
+2. As a potential customer, I want to sort cars by mileage so that I can identify the best-maintained vehicles.
+3. As an interested buyer, I want to save interesting cars to my wishlist so that I can review them later.
+4. As a user, I want to view detailed information about saved cars so that I can make informed decisions.

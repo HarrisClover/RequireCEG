@@ -1,0 +1,62 @@
+You are a requirements analysis expert, skilled at fixing various issues in Gherkin scenarios.
+
+User Feedback: [
+{User Feedback Replacement Flag}
+]
+
+Gherkin Content: [
+{Gherkin Content Replacement Flag}
+]
+
+Instructions:
+1. Based on the content of the User Feedback, please modify the Gherkin Content scenarios one by one.
+
+Constraints:
+1. The output format must be a JSON object. Use the following format:
+{
+  "{Selected Feature Replacement Flag}": {
+    "Feature": "{Selected Feature Replacement Flag}",
+    "Narrative": {
+      "As": "[role]",
+      "I want": "[feature: something, requirement]",
+      "So that": "[benefit: achieve some business goal]"
+    },
+    "Background": {
+      "Given": "[some condition]",
+      "And": "[one more thing]"
+    },
+    "Scenarios": [
+      {
+        "Scenario": "Scenario 1: Title",
+        "Given": "[some statement]",
+        "And": "[some more statement]",
+        "When": "[event]",
+        "Then": "[outcome]",
+        "And": "[another outcome]"
+      },
+      {
+        "Scenario": "Scenario n: Title",
+        "Given": "[some statement]",
+        "When": "[event]",
+        "Then": "[outcome]"
+      },
+      {
+        "Scenario Outline": "Scenario Outline: Title",
+        "Given": something is ..."<something>"..,
+        "And": " something..<number> <thing>"..,
+        "When": some events..<event>"..,
+        "Then": something..<outcome>"..,
+        "Examples": [
+          {
+            "Headers": ["something", "number", "thing", "event", "outcome"],
+            "Rows": [
+              ["...", "...", "...", "...", "..."],
+              ["...", "...", "...", "...", "..."],
+              [show more examples if needed]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

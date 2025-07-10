@@ -1,0 +1,4 @@
+1. As a node operator, I want to easily bootstrap and synchronize my node from Local Snapshot and data databases so that I can quickly join the network.
+2. As a developer, I want to interact with reliable API endpoints to manage node operations and retrieve transaction information.
+3. As a network participant, I want to create and broadcast transactions that are properly validated and stored.
+4. As a system administrator, I want to maintain an efficient network by properly pruning old transactions while preserving the inclusion state.

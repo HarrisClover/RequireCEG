@@ -1,0 +1,4 @@
+1. As a student, I want to perform basic arithmetic calculations so that I can complete my math homework efficiently.
+2. As a user, I want to see my calculation history so that I can track and review my previous operations.
+3. As a user, I want clear error messages when I make mistakes so that I can understand and correct my inputs.
+4. As a student, I want to perform multiple operations in sequence so that I can solve complex math problems.

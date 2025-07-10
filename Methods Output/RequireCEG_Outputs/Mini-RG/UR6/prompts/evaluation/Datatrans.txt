@@ -1,0 +1,58 @@
+You are a data extractor.
+
+Gherkin with logic: [
+{Gherkin with logic Replacement Flag}
+]
+
+Instruction:
+Remove the entire "Logic Exp" part from {Gherkin with logic}, leaving the other parts unchanged.
+
+Constraints:
+1. The output format must be a JSON object. Use the following format:
+{
+  "Feature Key": {
+    "Feature": "Feature name",
+    "Narrative": {
+      "As": "[role]",
+      "I want": "[feature: something, requirement]",
+      "So that": "[benefit: achieve some business goal]"
+    },
+    "Background": {
+      "Given": "[some condition]",
+      "And": "[one more thing]"
+    },
+    "Scenarios": [
+      {
+        "Scenario": "Scenario 1: Title",
+        "Given": "[some statement]",
+        "And": "[some more statement]",
+        "When": "[event]",
+        "Then": "[outcome]",
+        "And": "[another outcome]"
+      },
+      {
+        "Scenario": "Scenario n: Title",
+        "Given": "[some statement]",
+        "When": "[event]",
+        "Then": "[outcome]"
+      },
+      {
+        "Scenario Outline": "Scenario Outline: Title",
+        "Given": something is ..."<something>"..,
+        "And": " something..<number> <thing>"..,
+        "When": some events..<event>"..,
+        "Then": something..<outcome>"..,
+        "Examples": [
+          {
+            "Headers": ["something", "number", "thing", "event", "outcome"],
+            "Rows": [
+              ["...", "...", "...", "...", "..."],
+              ["...", "...", "...", "...", "..."],
+              [show more examples if needed]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

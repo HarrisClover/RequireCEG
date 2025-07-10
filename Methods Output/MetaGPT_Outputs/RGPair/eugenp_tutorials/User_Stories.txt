@@ -1,0 +1,4 @@
+1. As a user, I want to manage my account balance through credit transactions so that I can maintain accurate financial records.
+2. As a system administrator, I want to monitor the system's health status so that I can ensure continuous operation.
+3. As a customer, I want to search for books by title or author so that I can quickly find desired reading materials.
+4. As a developer, I want to integrate with RESTful APIs so that I can build additional features on top of the platform.

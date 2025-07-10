@@ -1,0 +1,5 @@
+1. As a customer, I want to view my order history and details so that I can track my purchases.
+2. As a shopper, I want to manage my personal information and addresses so that I can keep my account up to date.
+3. As a user, I want to contact customer support through a form so that I can get assistance when needed.
+4. As a customer, I want to access my credit slips so that I can track my refunds and credits.
+5. As a shopper, I want to maintain a wishlist so that I can save items for future purchase.

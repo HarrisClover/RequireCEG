@@ -1,0 +1,6 @@
+- As a registered user, I want to log in with my email and password so that I can access my account securely.
+- As a user who forgot their password, I want to easily reset it through a secure process.
+- As a new user, I want to create an account by providing my basic information and setting up secure credentials.
+- As a registering user, I want clear feedback on password requirements so I can create a strong password.
+- As a user who forgot their password, I want to receive a password reset link via email.
+- As a user resetting my password, I want to ensure my new password meets security requirements.

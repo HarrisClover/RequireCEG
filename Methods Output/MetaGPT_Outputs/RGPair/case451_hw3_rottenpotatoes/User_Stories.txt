@@ -1,0 +1,4 @@
+1. As a parent, I want to filter movies by MPAA ratings so that I can find appropriate content for my children.
+2. As a movie enthusiast, I want to sort movies by title or release date so that I can easily locate specific films.
+3. As a casual user, I want to see movie details clearly displayed so that I can make informed viewing decisions.
+4. As a user, I want to be able to select multiple MPAA ratings simultaneously so that I can browse across different rating categories.

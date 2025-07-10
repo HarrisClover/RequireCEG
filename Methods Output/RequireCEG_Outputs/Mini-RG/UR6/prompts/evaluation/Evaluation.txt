@@ -1,0 +1,19 @@
+You are a requirements analyst.
+
+Gherkin (1): [
+{PreGherkin Replacement Flag}
+]
+
+Gherkin (2): [
+{Gherkin Replacement Flag}
+]
+
+Instruction:
+1.   Please comprehensively compare {Gherkin (1)} and {Gherkin (2)} in terms of scenario coverage, reasonable design, clear logic, etc., and decide which is better and add critiques.
+Constraints:
+1.   They are independent and there is no improvement of who is who.   Please don't have any prejudice.
+2.   The output format must be a JSON object.   Use the following format:
+{
+"Critique": "Critiques for your choice",
+"Which better": "Answer Gherkin (1) or Gherkin (2) or Equal"
+}

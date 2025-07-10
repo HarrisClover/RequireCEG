@@ -1,0 +1,5 @@
+1. As a trader, I want to place various types of orders (GTC, IOC) so that I can execute my trading strategies effectively.
+2. As a risk manager, I want to enforce trading limits and balance checks so that I can prevent unauthorized or risky transactions.
+3. As an exchange operator, I want to maintain an accurate and real-time order book so that all participants can see current market conditions.
+4. As a trader, I want to modify or cancel my existing orders so that I can adjust my positions based on market changes.
+5. As a client, I want to view my active orders and account balance so that I can track my trading activity.

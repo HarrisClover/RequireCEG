@@ -1,0 +1,5 @@
+1. As a new user, I want to create an account with my email and password so that I can access the platform's features.
+2. As a content creator, I want to write and publish blog posts so that I can share my thoughts with other users.
+3. As a reader, I want to comment on other users' blog posts so that I can engage in discussions.
+4. As a traveler, I want to view available rooms and make reservations so that I can plan my stay.
+5. As a registered user, I want to receive booking confirmations so that I can keep track of my reservations.

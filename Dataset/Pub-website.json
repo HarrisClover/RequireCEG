@@ -1,0 +1,131 @@
+{
+    "websites": {
+        "Lyrebird health": {
+            "narrative": "Lyrebird Health is an AI Scribe for Medical Practitioners that securely listens in the background throughout your consultation, then intelligently generates a note tailored to your style, ready to transfer into the medical record. Lyrebird listens to your conversation with the patient and instantly turns your words into text.",
+            "link": "https://www.lyrebirdhealth.com/au",
+            "functions": [
+                "Consult-recording automatically builds multiple note templates (SOAP, chief complaints, custom, etc.)",
+                "Patient-consent verification when recording starts",
+                "Generate documents from physician dictation (notes, recommendations, certificates, letters) for review",
+                "Historical consultation information management with editable retention period",
+                "Search, sort and filter historical information",
+                "Customize general note-generation preferences",
+                "Customize consultation note templates (community examples, sharing, archiving)",
+                "Customize dictation document templates (community examples, sharing, archiving)",
+                "Macros - powerful shortcuts for pre-populated sentences in notes and letters",
+                "Memorization - one-time spelling corrections remembered forever (Direct Dictate)",
+                "AI-powered rewriting to polish generated notes and letters",
+                "Organizational management features",
+                "Multilingual translation to match patient language needs",
+                "Telemedicine compatibility for remote or phone consultations",
+                "Privacy protection",
+                "Account login",
+                "Account profile management",
+                "Account preference management (retention settings, date format, auto-save, etc.)",
+                "Account subscription management (payments, invoices)",
+                "Account security management (password changes, extra security steps)",
+                "Account integrations via API",
+                "Help and support functions"
+            ]
+        },
+        "STORM": {
+            "narrative": "Get a Wikipedia-like report on your topic with AI STORM is a research prototype  web system that supports interactive knowledge curation.",
+            "link": "https://storm.genie.stanford.edu/",
+            "functions": [
+                "Topic input (enter the subject to create an article)",
+                "Submit topic and generate a wiki-style report",
+                "Browse and list all subject-related links with examples",
+                "Optional input box for supplemental 'Writing Purpose'",
+                "Progress indicator during report generation",
+                "User login verification",
+                "Choose different report formats",
+                "Select search engine",
+                "Start a new session",
+                "My Library (view history of generated articles)",
+                "Hide sidebar",
+                "Discover (view examples of others' generated articles)",
+                "Feedback rating after article generation",
+                "Sidebar displays article outline",
+                "Contact Us",
+                "Bug Report",
+                "Export report",
+                "See Brainstorming Process (view generation steps)"
+              ]
+        },
+        "Notebook LM": {
+            "narrative": "NotebookLM is a personalized AI research assistant system. When you upload PDF files, websites, YouTube videos, audio files, Google Docs, or Google Slides, NotebookLM summarizes them and draws interesting connections between topics—all thanks to the multimodal understanding capabilities of Gemini 2.0. Once you've added all your sources, NotebookLM gets to work, becoming a personalized AI expert in the areas you care about most. You can confidently rely on NotebookLM's responses, as it provides clear citations and shows the exact excerpts from the original sources. With just one click, the new 'Audio Overview' feature can transform your sources into engaging, in-depth discussions.",
+            "link": "https://notebooklm.google/",
+            "functions": [
+                "User login authentication and management",
+                "Add PDF, TXT, Markdown, and audio sources",
+                "Add website link sources",
+                "Add Google Docs sources",
+                "Add Google Slides sources",
+                "Add YouTube video sources",
+                "Paste plain text as a source",
+                "Delete or rename sources",
+                "Auto-summarize same-type source files",
+                "Auto-summarize mixed source types",
+                "Explore sources through topic search",
+                "Chat based on source files",
+                "Replies include direct links to original source content",
+                "Click reply links to view the source",
+                "Save chat content to notes",
+                "Generate a two-person dialogue video discussing the source content",
+                "Audio controls: change playback speed, download, or delete",
+                "Create new notes",
+                "Generate briefings, study guides, FAQs, and timelines from notes and sources",
+                "Share notes",
+                "Generate mind maps from sources"
+              ]
+        },
+        "CourtAid": {
+            "narrative": "Courtaid is an AI-powered legal research website. Courtaid.ai provides access to over 2 million judgments, statutes, and pieces of legislation from Australia, the United Kingdom, and New Zealand. Legal research doesn't have to be hard—get references in seconds through three simple steps: 1. Select your jurisdiction. 2. Ask your question. 3. Review the answer.",
+            "link": "https://courtaid.ai/",
+            "functions": [
+                "Login management",
+                "Subscription management",
+                "Select jurisdiction (e.g., New South Wales)",
+                "Choose document type (Judgment, Legislation, Constitution, etc.)",
+                "Choose court type (e.g., Supreme Court of New South Wales)",
+                "Natural-language chat query input",
+                "AI-powered legal research assistant chat",
+                "Automatic judgment summaries",
+                "Advanced search and filtering",
+                "Weekly content updates",
+                "Create projects to combine your data with court data",
+                "Data privacy protection",
+                "System feedback and ratings",
+                "Chat and search with authoritative citation links",
+                "Display recent court filings and judgments",
+                "Upload files and chat based on the uploaded content"
+              ]
+        },
+        "Image Prompt": {
+            "narrative": "ImagePrompt is an AI-powered tool that enhances creativity and streamlines design by converting images into detailed, AI-optimized prompts.  It supports users in generating stunning visuals, crafting effective image prompts, and understanding any image through AI-generated descriptions.  Whether you're creating from scratch or analyzing existing visuals, ImagePrompt helps turn ideas into powerful, precise prompts—no matter your language proficiency.",
+            "link": "https://imageprompt.org/image-to-prompt",
+            "functions": [
+                "Inspiration (gallery of image-creation examples)",
+                "Tutorial blog",
+                "Convert an image to a prompt",
+                "Batch convert images to prompts",
+                "AI-powered image description",
+                "Transform simple text into detailed image prompts",
+                "AI edit and refine prompts",
+                "Translate prompts",
+                "Generate images from text prompts",
+                "Convert text input into a video prompt",
+                "Select language for image descriptions",
+                "Select language for prompts",
+                "Save and edit generated prompts and descriptions",
+                "Upload an image to generate a video prompt",
+                "Subscription content",
+                "Theme color customization",
+                "System language switch",
+                "Login verification",
+                "Application programming interface (API)"
+              ]
+        }
+        
+    }
+}

@@ -1,0 +1,5 @@
+1. As a new user, I want to create an account with my personal details so that I can start booking shared taxi rides.
+2. As a registered user, I want to log in securely to access my account and make reservations.
+3. As a customer, I want to see real-time pricing updates based on passenger count and time periods so that I can make informed booking decisions.
+4. As a user with JavaScript disabled, I want to still be able to use basic system features so that I can make reservations.
+5. As a frequent user, I want my session to remain secure and consistent across different environments so that I can trust the system with my bookings.

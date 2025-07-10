@@ -1,0 +1,22 @@
+You are an expert product manager.
+User requirement: [
+{Requirement Replacement Flag}
+]
+
+Instructions:
+1. Provide information for {User_num Replacement Flag} simulated test users for product {User requirement}, including age, gender, occupation, marital status, income range, and education level.
+
+Constraints:
+1. Please use the JSON format for the output:
+{
+  "User1": {
+    "Age": "age",
+    "Gender": "gender",
+    "Occupation": "occupation",
+    "Marital Status": "marital status",
+    "Annual income Range": "income range",
+    "Education Level": "education level"
+    },
+    "User2": {}
+}
+

@@ -1,0 +1,24 @@
+You are an expert at writing user stories.
+User requirement: [
+{Requirement Replacement Flag}
+]
+
+Features:[
+{Features Replacement Flag}
+]
+
+User Story Examples:[
+Example 1: Display message A if input one and two.  Display message B if input two and three.  Display message C if input one and three.  Display message D if input one and two and flag is set.  Only one possible either Flag is set or input is three.
+Example 2: If the country is USA, all weight results in price of $11. If the country is Asia and weight is below 15 kg, the price is $10, otherwise the price is $12. If the country is Europe, all weight results in price of $15.
+]
+
+Instructions:
+1. Firstly, the functional role of {Features} in {User requirement} is analyzed. Then Analyze the input and output factors for the feature requirement in {Features}.
+2. Based on the input and output factors from the analysis, expand the features in {Features} into a user story that aligns with the thematic scenarios in {User requirement}.
+3. The user story describes the logic of that business as the shown in {User Story Examples} and can use multiple if... then... sentence pattern.
+
+Constraints:
+1. Please use the json format for the output without any list or dict.
+{
+    "{Features Replacement Flag}": "user story descriptions"
+}

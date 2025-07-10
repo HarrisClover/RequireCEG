@@ -1,0 +1,187 @@
+# Dynamic Shipping Cost Calculator PRD
+
+## 1. Project Overview
+
+### 1.1 Project Information
+- Project Name: shipping_cost_calculator
+- Programming Language: React, JavaScript, Tailwind CSS
+- Original Requirements: Implement a dynamic shipping cost calculation system based on cart total value with specific price thresholds and corresponding shipping fees.
+
+### 1.2 Product Goals
+1. Provide transparent and accurate shipping cost calculations based on cart total
+2. Improve user experience by clearly communicating shipping costs and potential savings
+3. Increase average order value by incentivizing users to reach higher cart value thresholds
+
+## 2. Product Definition
+
+### 2.1 User Stories
+1. As a shopper, I want to see the shipping cost for my current cart total so that I can understand the total cost of my purchase
+2. As a cost-conscious customer, I want to see how much more I need to spend to reach the next shipping tier so that I can optimize my purchase
+3. As a customer, I want to see any applicable promotions or discounts clearly displayed so that I can maximize my savings
+4. As a mobile shopper, I want to easily view shipping costs on my device so that I can make purchase decisions on the go
+
+### 2.2 Competitive Analysis
+
+#### Key Competitors
+1. Amazon
+   - Pros:
+     * Free shipping with Prime membership
+     * Clear display of shipping costs
+     * Multiple shipping options
+   - Cons:
+     * Requires subscription for best shipping rates
+     * Complex shipping rules for non-Prime items
+
+2. Walmart
+   - Pros:
+     * Free shipping above $35
+     * Simple threshold system
+     * Store pickup option
+   - Cons:
+     * Limited shipping options
+     * No incremental shipping tiers
+
+3. Target
+   - Pros:
+     * Free shipping with RedCard
+     * Clear shipping calculator
+     * Multiple delivery options
+   - Cons:
+     * Higher minimum for free shipping
+     * Limited international shipping
+
+4. Best Buy
+   - Pros:
+     * Multiple shipping speed options
+     * Clear delivery date display
+     * Store pickup available
+   - Cons:
+     * Higher shipping costs
+     * Complex threshold system
+
+5. eBay
+   - Pros:
+     * Seller-defined shipping
+     * Multiple carrier options
+     * International shipping support
+   - Cons:
+     * Inconsistent shipping costs
+     * Variable delivery times
+
+### 2.3 Competitive Quadrant Chart
+
+```mermaid
+quadrantChart
+    title Ecommerce Shipping Cost vs. User Experience
+    x-axis Low Cost --> High Cost
+    y-axis Poor Experience --> Great Experience
+    quadrant-1 Premium Service
+    quadrant-2 Market Leaders
+    quadrant-3 Cost Efficient
+    quadrant-4 Needs Improvement
+    Amazon: [0.3, 0.9]
+    Walmart: [0.4, 0.7]
+    Target: [0.5, 0.6]
+    Best Buy: [0.7, 0.5]
+    eBay: [0.6, 0.4]
+    Our Target Product: [0.4, 0.8]
+```
+
+## 3. Technical Specifications
+
+### 3.1 Requirements Analysis
+The system must implement a tiered shipping cost calculation based on cart total value. Here are the core technical requirements:
+
+#### 3.1.1 Shipping Cost Tiers (P0)
+MUST implement the following shipping cost tiers:
+- Cart total ≤ $25: $3.99 shipping
+- Cart total = $25: $4.99 shipping
+- Cart total $25-$50: $4.99 shipping
+- Cart total = $50: $6.99 shipping
+- Cart total $50-$75: $6.99 shipping
+- Cart total = $75: $8.99 shipping
+- Cart total $75-$100: $8.99 shipping
+- Cart total = $100: $10.99 shipping
+- Cart total > $100: $10.99 shipping
+
+#### 3.1.2 User Interface Requirements (P0)
+MUST provide:
+- Real-time shipping cost updates as cart value changes
+- Clear display of current shipping cost
+- Visual indicator showing progress to next shipping tier
+- Mobile-responsive design
+
+#### 3.1.3 Promotion Display Requirements (P1)
+SHOULD implement:
+- Banner area for active shipping promotions
+- Notification system for available discounts
+- Progress bar showing distance to free shipping thresholds
+- Tooltip with shipping cost breakdown
+
+### 3.2 Requirements Pool
+
+#### P0 (Must Have)
+1. Accurate shipping cost calculation based on cart total
+2. Real-time shipping cost updates
+3. Mobile-responsive interface
+4. Clear display of current shipping tier
+5. Error handling for edge cases
+6. Currency formatting and validation
+
+#### P1 (Should Have)
+1. Progress indicator to next shipping tier
+2. Promotional banner system
+3. Shipping cost savings calculator
+4. Tooltip with detailed information
+5. Animation for tier changes
+
+#### P2 (Nice to Have)
+1. A/B testing for different UI layouts
+2. Historical shipping cost analytics
+3. Customizable promotion rules
+4. Advanced validation rules
+5. International shipping support
+
+### 3.3 UI Design Draft
+
+```mermaid
+graph TD
+    A[Cart Summary] --> B[Shipping Cost Display]
+    B --> C{Cart Total}
+    C --> D[Current Tier]
+    C --> E[Next Tier]
+    B --> F[Promotion Banner]
+    F --> G[Active Discounts]
+    F --> H[Progress Bar]
+```
+
+#### Key UI Components
+1. Cart Summary Section
+   - Total items count
+   - Subtotal amount
+   - Current shipping cost
+   - Final total
+
+2. Shipping Information Display
+   - Current shipping tier
+   - Progress to next tier
+   - Potential savings indicator
+
+3. Promotion Section
+   - Active promotions banner
+   - Available discounts
+   - Shipping tier progress bar
+
+### 3.4 Open Questions
+1. How should the system handle international shipping rates?
+2. Should we implement any special holiday shipping rates?
+3. How will the system integrate with existing promotion engines?
+4. What metrics should we track to measure the effectiveness of the shipping tier system?
+5. Should we consider implementing a membership program for preferential shipping rates?
+
+## 4. Success Metrics
+1. Cart abandonment rate decrease by 15%
+2. Average order value increase by 20%
+3. Customer satisfaction score improvement by 10%
+4. Reduction in shipping-related customer service inquiries by 25%
+5. Increase in users reaching higher shipping tiers by 30%

@@ -1,0 +1,235 @@
+# Product Requirements Document: SecureTransact - Age-Verified Money Transaction System
+
+## 1. Project Overview
+
+### 1.1 Project Information
+- Project Name: secure_transact
+- Programming Language: React, JavaScript, Tailwind CSS
+- Original Requirements:
+  - User authentication with age verification
+  - Adults should be able to send and withdraw money without limits
+  - Non-adults should be limited to sending maximum 20 euros
+  - Non-adults should not be able to withdraw money
+
+### 1.2 Product Goals
+1. Create a secure and age-verified money transaction platform
+2. Implement differentiated transaction limits based on user age
+3. Ensure compliance with financial regulations for minors
+
+## 2. User Stories
+
+1. As an adult user, I want to verify my age during registration so that I can access full transaction capabilities
+2. As an adult user, I want to send and withdraw money without limits so that I can manage my finances flexibly
+3. As a non-adult user, I want to send small amounts of money (up to 20 euros) so that I can make basic transactions
+4. As a parent, I want to ensure my child cannot withdraw money or send large amounts so that their finances remain protected
+5. As a business owner, I want to verify the age of users so that transactions comply with regulations
+
+## 3. Competitive Analysis
+
+### 3.1 Market Competitors
+
+1. PayPal
+   - Pros:
+     * Established brand with high trust
+     * Comprehensive payment features
+     * Strong security measures
+   - Cons:
+     * Limited age-specific controls
+     * Complex fee structure
+     * No specific minor protection features
+
+2. Revolut Junior
+   - Pros:
+     * Dedicated youth accounts
+     * Parental controls
+     * Educational features
+   - Cons:
+     * Limited to existing Revolut users
+     * Geographic restrictions
+     * Monthly subscription fees
+
+3. GoHenry
+   - Pros:
+     * Purpose-built for young users
+     * Strong parental controls
+     * Educational content
+   - Cons:
+     * Subscription-based model
+     * Limited adult features
+     * Only available in UK and US
+
+4. Cash App
+   - Pros:
+     * User-friendly interface
+     * Quick setup
+     * Multiple payment options
+   - Cons:
+     * Limited age verification
+     * Basic parental controls
+     * Security concerns
+
+5. Greenlight
+   - Pros:
+     * Robust parental controls
+     * Educational features
+     * Real-time notifications
+   - Cons:
+     * Monthly fees
+     * Limited international support
+     * Complex setup process
+
+### 3.2 Competitive Position
+
+```mermaid
+quadrantChart
+    title Comparison of Money Transfer Apps
+    x-axis Low Security --> High Security
+    y-axis Basic Age Controls --> Advanced Age Controls
+    quadrant-1 Market Leaders
+    quadrant-2 Security Focused
+    quadrant-3 Basic Solutions
+    quadrant-4 Age Control Focused
+    PayPal: [0.8, 0.4]
+    Revolut Junior: [0.7, 0.8]
+    GoHenry: [0.6, 0.9]
+    Cash App: [0.5, 0.3]
+    Greenlight: [0.65, 0.85]
+    SecureTransact: [0.85, 0.9]
+```
+
+## 4. Technical Requirements
+
+### 4.1 Core Features (P0)
+1. User Authentication and Age Verification
+   - Must implement secure user registration
+   - Must verify user age through official ID documentation
+   - Must store age verification status securely
+   - Must maintain compliance with data protection regulations
+
+2. Transaction Processing
+   - Must implement money sending functionality
+   - Must implement withdrawal functionality for adult users
+   - Must enforce 20 euro limit for non-adult users
+   - Must prevent withdrawals for non-adult users
+
+3. Security Features
+   - Must implement end-to-end encryption for all transactions
+   - Must include two-factor authentication
+   - Must log all transaction attempts
+   - Must implement fraud detection system
+
+### 4.2 Enhanced Features (P1)
+1. User Interface
+   - Should provide clear age-specific interfaces
+   - Should display transaction limits prominently
+   - Should include real-time balance updates
+   - Should offer transaction history
+
+2. Notification System
+   - Should send transaction confirmation emails
+   - Should provide in-app notifications
+   - Should alert on suspicious activities
+   - Should notify when approaching transaction limits
+
+### 4.3 Additional Features (P2)
+1. Analytics Dashboard
+   - May include spending patterns visualization
+   - May offer budget planning tools
+   - May provide transaction categorization
+
+2. Social Features
+   - May allow creating trusted contacts
+   - May enable group transactions for adults
+   - May include chat functionality
+
+## 5. UI Design Draft
+
+### 5.1 Main Screens
+
+1. Login/Registration Screen
+```
+Layout: Single Column
+Elements:
+- Email Input Field (Required)
+- Password Input Field (Required)
+- Age Verification Section
+  * ID Upload
+  * Face Verification
+- Submit Button
+```
+
+2. Dashboard
+```
+Layout: Two Column
+Left Column:
+- Balance Display (Large)
+- Quick Action Buttons
+  * Send Money
+  * Withdraw (Adult Only)
+
+Right Column:
+- Recent Transactions List
+- Transaction Limits Display
+```
+
+3. Transaction Screen
+```
+Layout: Single Column
+Elements:
+- Amount Input
+- Recipient Selection
+- Transaction Type
+- Confirmation Button
+- 2FA Verification
+```
+
+## 6. Open Questions
+
+1. User Experience
+   - How should we handle age verification failures?
+   - What is the optimal UX for displaying transaction limits?
+   - Should we implement a waiting period for new accounts?
+
+2. Technical Implementation
+   - What ID verification service should we use?
+   - How do we handle currency conversion for international transactions?
+   - What additional security measures are needed for high-value transactions?
+
+3. Business Rules
+   - Should we implement different tiers for adult users?
+   - How do we handle users approaching adult age?
+   - What appeal process should be implemented for declined transactions?
+
+## 7. Success Metrics
+
+1. User Engagement
+   - Monthly Active Users (MAU)
+   - Transaction frequency
+   - User retention rate
+
+2. Security
+   - Fraud attempt rate
+   - Successful age verification rate
+   - Security incident frequency
+
+3. Performance
+   - Transaction success rate
+   - Average transaction time
+   - System uptime
+
+## 8. Timeline and Milestones
+
+Phase 1 (Months 1-2):
+- Basic user authentication
+- Age verification system
+- Core transaction functionality
+
+Phase 2 (Months 3-4):
+- Enhanced security features
+- UI/UX improvements
+- Testing and optimization
+
+Phase 3 (Months 5-6):
+- Additional features
+- Performance optimization
+- Launch preparation

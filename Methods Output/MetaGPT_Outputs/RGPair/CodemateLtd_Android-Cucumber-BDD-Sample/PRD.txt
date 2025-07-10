@@ -1,0 +1,163 @@
+# Library Search System PRD
+
+## 1. Project Overview
+
+### 1.1 Language & Project Info
+- Language: English
+- Programming Language: React, JavaScript, Tailwind CSS
+- Project Name: library_search_system
+
+### 1.2 Original Requirements
+The library system must provide a robust search functionality for customers based on three criteria:
+- Publication year
+- Author
+- Title
+
+The system should display a complete book list with initially 3 books and support various search functionalities with specific result requirements.
+
+## 2. Product Definition
+
+### 2.1 Product Goals
+1. Create an intuitive and efficient book search system for library users
+2. Provide accurate and relevant search results across multiple criteria
+3. Enhance user experience through clear result presentation and filtering options
+
+### 2.2 User Stories
+1. As a library user, I want to view all available books so that I can browse the complete collection
+2. As a reader, I want to search books by publication year so that I can find recent or specific era publications
+3. As a literature enthusiast, I want to search by author name so that I can find all works by my favorite writers
+4. As a student, I want to search by book title keywords so that I can quickly find specific books
+
+### 2.3 Competitive Analysis
+
+1. Google Books
+- Pros: Comprehensive search, multiple filters, preview availability
+- Cons: Complex interface, overwhelming options
+
+2. Goodreads
+- Pros: User reviews, social features, detailed book info
+- Cons: Search accuracy issues, slow performance
+
+3. WorldCat
+- Pros: Library-specific, extensive database
+- Cons: Dated interface, complex navigation
+
+4. Library of Congress
+- Pros: Authoritative source, detailed metadata
+- Cons: Complex for casual users, overwhelming interface
+
+5. Open Library
+- Pros: Simple interface, free access
+- Cons: Limited features, inconsistent data
+
+### 2.4 Competitive Quadrant Chart
+
+```mermaid
+quadrantChart
+    title "Library Search Systems Comparison"
+    x-axis "Low User-Friendliness" --> "High User-Friendliness"
+    y-axis "Basic Features" --> "Advanced Features"
+    quadrant-1 "Power Users"
+    quadrant-2 "Industry Leaders"
+    quadrant-3 "Limited Appeal"
+    quadrant-4 "User Friendly"
+    "Google Books": [0.8, 0.9]
+    "Goodreads": [0.7, 0.75]
+    "WorldCat": [0.3, 0.85]
+    "Library of Congress": [0.2, 0.95]
+    "Open Library": [0.6, 0.4]
+    "Our Target Product": [0.85, 0.6]
+```
+
+## 3. Technical Specifications
+
+### 3.1 Requirements Analysis
+
+#### 3.1.1 Book List Display
+- MUST display a complete list of all available books
+- MUST show initially 3 books in the system
+- MUST include key information for each book:
+  * Title
+  * Author
+  * Publication Year
+
+#### 3.1.2 Search Functionality
+- MUST support three search criteria:
+  1. Publication Year
+  2. Author Name
+  3. Title Keywords
+- MUST provide accurate result counts
+- MUST support partial word matches for author and title searches
+- MUST maintain search performance with growing library size
+
+#### 3.1.3 Search Results
+- MUST display matching results count
+- MUST show all relevant book information in results
+- MUST support empty result handling
+- MUST provide clear feedback on search criteria used
+
+### 3.2 Requirements Pool
+
+#### P0 (Must-have)
+1. Complete book list display with 3 initial books
+2. Search by publication year functionality
+3. Search by author name functionality
+4. Search by title keywords functionality
+5. Accurate result count display
+
+#### P1 (Should-have)
+1. Combined search criteria (multiple filters)
+2. Sort functionality for search results
+3. Clear search/reset functionality
+4. Search history tracking
+
+#### P2 (Nice-to-have)
+1. Advanced search operators (AND, OR, NOT)
+2. Save favorite searches
+3. Export search results
+4. Mobile-responsive design
+
+### 3.3 UI Design Draft
+
+```
++----------------------------------+
+|        Library Search System      |
++----------------------------------+
+| Search Criteria:                  |
+| [Year] [Author] [Title]          |
++----------------------------------+
+| Results: (X matches found)        |
+|                                  |
+| Book List:                       |
+| - Title:                         |
+|   Author:                        |
+|   Year:                          |
+|                                  |
+| [Pagination if needed]           |
++----------------------------------+
+```
+
+### 3.4 Test Cases
+
+1. Initial State
+- MUST display exactly 3 books
+- MUST show all book details
+
+2. Publication Year Search
+- Searching for "2016" MUST return all books from 2016
+
+3. Author Search
+- Searching for "Jane" MUST return all books by authors with "Jane"
+- Searching for "Jane Smith" MUST return exact author matches
+
+4. Title Search
+- Searching for "Awesome" MUST return exactly 2 books
+- Searching for "cool" MUST return exactly 1 book
+
+### 3.5 Open Questions
+
+1. Should the search be case-sensitive?
+2. What should be the default sort order for search results?
+3. Should we implement real-time search or require submit action?
+4. How should we handle special characters in search terms?
+5. What is the maximum number of results to display per page?

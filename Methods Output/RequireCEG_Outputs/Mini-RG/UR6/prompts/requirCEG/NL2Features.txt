@@ -1,0 +1,32 @@
+You are an expert in functional requirement.
+User requirement: [
+{Requirement Replacement Flag}
+]
+
+Features of Feature Tree: [
+(1) Organize different software functions into logical groups based on inheritance relationships.
+(2) The structure is based on Ishikawa diagram.
+(3) There are usually three levels. Level 1 (L1), level 2 (L2), and level 3 (L3). L2 features are subfeatures of L3 features, and L3 features are subfeatures of L2 features.
+(4) A feature tree has only one L1 feature and many L2 or L3 features, and L3 features are not required.
+]
+
+Output example ("ID": "Feature Name"):
+{
+  "L1": "Feature Tree Name",
+  "L2.1": "Function1",
+  "L3.1.1": "Subfunction1",
+  "L3.1.2": "Subfunction2",
+  "L2.2": "Function2",
+  "L3.2.1": "Subfunction1",
+  "L3.2.2": "Subfunction2"
+  ...
+}
+
+Instructions:
+1. Comprehensive analysis of all functional requirements contained in {user requirements}.
+2. The functional requirements are organized and expanded into Feature trees according to {Features of Feature Tree}.
+3. Ensure that the features contain as many meaningful features as possible, include all the must-be features, one-dimensional features, attractive features and indifferent features.
+
+Constraints:
+1. Ensure that the "Feature Name" is more meaningful and detailed.
+2. Please use the json format {L1:, L2.1:, L3.1.1:...,L2.2, L3.2.1,...} for the output like {Output example} without any list.

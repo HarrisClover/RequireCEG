@@ -1,0 +1,4 @@
+1. As a cloud administrator, I want to list all available SNS topics and SQS queues so that I can monitor and manage messaging resources effectively.
+2. As a system operator, I want to receive clear error messages when accessing non-existent resources so that I can quickly identify and resolve issues.
+3. As a DevOps engineer, I want to manage multiple AWS services through a single integration point so that I can streamline our infrastructure management.
+4. As a developer, I want consistent response formats across different AWS services so that I can build reliable applications.

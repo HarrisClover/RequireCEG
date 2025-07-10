@@ -1,0 +1,4 @@
+1. As a pet store owner, I want to add new pets to the catalog so that I can keep track of available pets.
+2. As a store manager, I want to search pets by category so that I can quickly find specific types of pets.
+3. As a staff member, I want to update pet information so that the records stay current.
+4. As an administrator, I want to view all available pets so that I can manage inventory effectively.

@@ -1,0 +1,26 @@
+You are a requirements analyst.
+Atomic C and E: [
+{Atomic Replacement Flag}
+]
+
+Logical Expressions: [
+{CEG Replacement Flag}
+]
+
+Instructions:
+1. Intervene conditional nodes (Cx) according to the order of expressions in the {logical expression}. By default all condition nodes are initially true and intervention is do(Cx=False).
+2. Find all {logical Expressions} associated with condition (Cx) and add them to "Affected Expressions".
+3. The specific meaning of the corresponding condition C and action E is obtained from {Atomic C and E}, and the system description is generated according to the result of the inferred intervention.
+Constraints:
+1. The specific meaning of the corresponding condition C and action E is obtained from {atoms C and E} to replace the affected expression, and then the natural language system description is formed based on the expression.
+2. The output json format is:
+ {
+    "QA n": 
+    {
+        "Intervention": "do(Cx = False)",
+        "Description": "Natural language system description",
+        "Affected Expressions": ["Exp x",...],
+    },
+    "QA n+x": 
+    ...
+ }

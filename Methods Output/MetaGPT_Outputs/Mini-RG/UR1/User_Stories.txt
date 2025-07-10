@@ -1,0 +1,4 @@
+1. As a bank customer, I want to securely log in to my account using my username and password so that I can access my banking services.
+2. As a bank customer, I want to view my account balance after logging in so that I can monitor my finances.
+3. As a bank security officer, I want to ensure users can only access accounts they have permission for so that customer data remains secure.
+4. As a bank customer, I want to receive clear error messages when login fails so that I can understand what went wrong.

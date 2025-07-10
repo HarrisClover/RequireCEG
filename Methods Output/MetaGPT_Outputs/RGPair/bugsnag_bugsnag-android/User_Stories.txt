@@ -1,0 +1,5 @@
+- As a developer, I want to capture native crashes in both JVM and NDK code so that I can debug platform-specific issues.
+- As a developer, I want to track ANRs in both environments so that I can identify performance bottlenecks.
+- As a mobile developer, I want to add custom metadata to error reports so that I can include relevant business context.
+- As a QA engineer, I want to verify error reporting in various scenarios so that I can ensure system reliability.
+- As a support engineer, I want to access detailed crash reports so that I can efficiently resolve user issues.

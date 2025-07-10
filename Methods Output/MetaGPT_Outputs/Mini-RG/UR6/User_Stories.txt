@@ -1,0 +1,4 @@
+1. As a billing administrator, I want to view all activity fees online so that I can create accurate bill statements.
+2. As a user, I want to browse activity fees without creating a bill statement so that I can review historical data.
+3. As a user, I want to receive clear error messages when there are system issues so that I know why I can't access the fees.
+4. As an administrator, I want to see partial activity fees even during system load so that I can continue working.

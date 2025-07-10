@@ -1,0 +1,256 @@
+# REST Mock Service - Product Requirements Document (PRD)
+
+## 1. Project Information
+- **Project Name**: rest_mock_service
+- **Document Status**: Draft
+- **Programming Language**: React, JavaScript, Tailwind CSS
+- **Original Requirements**: Create a REST Mock service application supporting both REST and SOAP services with SEQUENCE and SCRIPT-based response dispatching, including CRUD operations, parameter synchronization, OAuth 2.0 integration, and comprehensive management features.
+
+## 2. Product Definition
+
+### 2.1 Product Goals
+1. Provide a robust and flexible mock service platform supporting both REST and SOAP protocols
+2. Streamline the testing process through automated response management and parameter synchronization
+3. Ensure secure and efficient API testing with comprehensive OAuth 2.0 integration
+
+### 2.2 User Stories
+1. As a QA engineer, I want to create mock services that can return different responses in sequence so that I can test various scenarios without changing the mock configuration.
+2. As an API developer, I want to manage OAuth 2.0 tokens automatically so that I can focus on testing endpoints without manually refreshing expired tokens.
+3. As a test automation engineer, I want to create script-based response logic so that I can simulate complex backend behaviors.
+4. As a SOAP service tester, I want to manage SOAP mock services similarly to REST services so that I can maintain consistency in testing approaches.
+
+### 2.3 Competitive Analysis
+
+#### Key Competitors:
+1. **Postman Mock Server**
+   - Pros:
+     * Integrated with popular Postman ecosystem
+     * Strong REST API support
+     * Good documentation
+   - Cons:
+     * Limited SOAP support
+     * Basic sequencing capabilities
+     * No scripting for response logic
+
+2. **WireMock**
+   - Pros:
+     * Powerful matching rules
+     * Good Java integration
+     * Strong community support
+   - Cons:
+     * Complex setup process
+     * Limited UI capabilities
+     * Steep learning curve
+
+3. **Mockoon**
+   - Pros:
+     * User-friendly interface
+     * Easy to set up
+     * Good documentation
+   - Cons:
+     * No SOAP support
+     * Limited authentication options
+     * Basic response sequencing
+
+4. **SoapUI Mock Services**
+   - Pros:
+     * Excellent SOAP support
+     * Comprehensive testing features
+     * Professional tooling
+   - Cons:
+     * Expensive for pro features
+     * Heavy resource usage
+     * Complex configuration
+
+5. **MockServer**
+   - Pros:
+     * Good programmatic control
+     * Flexible response options
+     * Strong documentation
+   - Cons:
+     * Limited UI
+     * Complex setup
+     * No built-in OAuth support
+
+### 2.4 Competitive Quadrant Chart
+
+```mermaid
+quadrantChart
+    title Mockup Service Tools Comparison
+    x-axis Low Feature Set --> High Feature Set
+    y-axis Low Ease of Use --> High Ease of Use
+    quadrant-1 Feature Rich & User Friendly
+    quadrant-2 Feature Limited & User Friendly
+    quadrant-3 Feature Limited & Complex
+    quadrant-4 Feature Rich & Complex
+    "Postman Mock Server": [0.70, 0.75]
+    "WireMock": [0.85, 0.45]
+    "Mockoon": [0.40, 0.85]
+    "SoapUI Mock Services": [0.90, 0.40]
+    "MockServer": [0.65, 0.35]
+    "Our Target Product": [0.85, 0.80]
+```
+
+## 3. Technical Specifications
+
+### 3.1 Mock Service Core Features
+
+#### 3.1.1 REST Mock Service Requirements
+- **Must** support all standard HTTP methods (GET, POST, PUT, DELETE, PATCH, OPTIONS)
+- **Must** allow creation, editing, and deletion of mock endpoints
+- **Must** support custom response headers and status codes
+- **Must** support JSON and XML response formats
+- **Should** support file upload/download simulation
+- **May** support GraphQL endpoints
+
+#### 3.1.2 SOAP Mock Service Requirements
+- **Must** support SOAP 1.1 and 1.2 protocols
+- **Must** allow WSDL-based service creation
+- **Must** support XML schema validation
+- **Must** handle SOAP headers and faults
+- **Should** support WS-Security
+- **May** support WS-Addressing
+
+#### 3.1.3 Response Dispatching
+- **Must** support sequence-based response patterns:
+  * Round-robin sequence
+  * Random sequence
+  * Weighted random sequence
+- **Must** support script-based response logic:
+  * JavaScript-based response generation
+  * Conditional response selection
+  * Request parameter-based logic
+  * Custom status code selection
+
+### 3.2 Parameter Management
+
+#### 3.2.1 Request Parameters
+- **Must** support query parameters
+- **Must** support path parameters
+- **Must** support matrix parameters
+- **Must** support header parameters
+- **Should** support cookie parameters
+
+#### 3.2.2 Parameter Synchronization
+- **Must** sync parameters across:
+  * Request view
+  * Method configuration
+  * Resource editor
+  * URI bar
+- **Must** provide real-time validation
+- **Must** support parameter templates
+- **Should** support parameter groups
+
+### 3.3 OAuth 2.0 Integration
+
+#### 3.3.1 OAuth Profile Management
+- **Must** support multiple OAuth 2.0 flows:
+  * Authorization Code
+  * Client Credentials
+  * Password Credentials
+  * Implicit
+- **Must** store OAuth profiles
+- **Must** support token refresh
+- **Must** manage token expiration
+
+#### 3.3.2 Token Handling
+- **Must** automatically refresh expired tokens
+- **Must** support token storage
+- **Must** allow manual token refresh
+- **Should** support token rotation
+- **Should** provide token usage analytics
+
+### 3.4 User Interface Requirements
+
+#### 3.4.1 Mock Service Management
+- **Must** provide a service dashboard
+- **Must** include service creation wizard
+- **Must** support drag-and-drop endpoint organization
+- **Should** support service templates
+- **Should** provide service statistics
+
+#### 3.4.2 Response Configuration
+- **Must** provide response editor
+- **Must** support response templates
+- **Must** include response validation
+- **Should** provide response preview
+- **May** support response examples library
+
+#### 3.4.3 Parameter Management Interface
+- **Must** provide parameter organization
+- **Must** support parameter validation
+- **Must** include parameter documentation
+- **Should** support parameter templates
+
+### 3.5 Logging and Monitoring
+
+#### 3.5.1 Request/Response Logging
+- **Must** log all requests and responses
+- **Must** provide searchable log interface
+- **Must** support log filtering
+- **Should** support log export
+- **May** support log analytics
+
+#### 3.5.2 Error Handling
+- **Must** log all system errors
+- **Must** provide error notifications
+- **Must** include error details
+- **Should** suggest error resolutions
+
+### 3.6 Requirements Pool
+
+#### P0 (Must Have)
+1. REST and SOAP mock service creation and management
+2. Sequence and script-based response dispatching
+3. Basic parameter synchronization
+4. OAuth 2.0 profile management
+5. Request/response logging
+6. Basic error handling
+7. Service dashboard
+
+#### P1 (Should Have)
+1. Advanced parameter templates
+2. Response preview
+3. Service statistics
+4. Token usage analytics
+5. Log export functionality
+6. Parameter groups
+7. Service templates
+
+#### P2 (Nice to Have)
+1. GraphQL support
+2. Response examples library
+3. Log analytics
+4. WS-Addressing support
+5. Advanced error resolution suggestions
+6. Parameter documentation generation
+
+### 3.7 UI Design Draft
+
+```mermaid
+graph TD
+    A[Dashboard] --> B[Service List]
+    A --> C[Create New Service]
+    B --> D[Service Details]
+    D --> E[Endpoints]
+    D --> F[Parameters]
+    D --> G[OAuth Profiles]
+    E --> H[Response Configuration]
+    H --> I[Sequence Editor]
+    H --> J[Script Editor]
+    F --> K[Parameter Sync]
+    G --> L[Token Management]
+```
+
+### 3.8 Open Questions
+1. Should we support additional protocols beyond REST and SOAP?
+2. What is the maximum size limit for script-based responses?
+3. Should we implement rate limiting for mock services?
+4. How should we handle version control for mock services?
+5. What level of WSDL validation should be implemented?
+
+## 4. Timeline and Milestones
+1. Phase 1 (Month 1-2): Core REST Mock Service
+2. Phase 2 (Month 3-4): SOAP Support & Response Dispatching
+3. Phase 3 (Month 4-5): OAuth Integration
+4. Phase 4 (Month 6): UI Implementation & Testing

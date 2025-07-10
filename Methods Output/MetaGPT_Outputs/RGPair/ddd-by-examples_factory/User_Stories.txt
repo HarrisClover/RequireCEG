@@ -1,0 +1,6 @@
+- As a demand planner, I want to manually adjust demand forecasts for current and future dates so that I can respond to changing customer needs.
+- As a system administrator, I want all demand adjustments to be tracked and stored so that we maintain a complete audit trail.
+- As a customer service representative, I want to preserve call-off document data so that I can reference original customer requirements.
+- As a production manager, I want the system to automatically adjust production schedules based on demand changes so that we maintain optimal resource utilization.
+- As a plant supervisor, I want to see potential conflicts between adjustments and future call-offs so that I can resolve issues proactively.
+- As a quality assurance manager, I want to prioritize QA tasks for locked parts in stock so that we maintain product quality standards.

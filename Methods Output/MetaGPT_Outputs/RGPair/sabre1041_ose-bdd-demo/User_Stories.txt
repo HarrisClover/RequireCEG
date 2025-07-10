@@ -1,0 +1,4 @@
+1. As a shopper, I want to see the shipping cost for my current cart total so that I can understand the total cost of my purchase.
+2. As a cost-conscious customer, I want to see how much more I need to spend to reach the next shipping tier so that I can optimize my purchase.
+3. As a customer, I want to see any applicable promotions or discounts clearly displayed so that I can maximize my savings.
+4. As a mobile shopper, I want to easily view shipping costs on my device so that I can make purchase decisions on the go.

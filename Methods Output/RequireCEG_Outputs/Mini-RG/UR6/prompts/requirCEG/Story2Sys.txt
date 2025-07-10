@@ -1,0 +1,23 @@
+System Examples: [
+Example 1: A file is considered updated if the character in the first column is "A" or "B" and the second column is a number.  If the first character is wrong, the message x should be printed.  If the second column is not a number, the message y should be printed.
+Example 2: A student can either be enrolled at University of Ottawa, at the University of Carleton, or at the University of Quebec in Hull. If he/she obtains grade A+ in Mathematics and he/she is at University of Ottawa or at University of Quebec in Hull, then the computer system at the university wll allow him/her to take the skating course in winter. If he/she obtains grade A+ and he/she is at Univrsity of Carleton, then the system will allow him/her to take the skiing course in winter. If his/her grade is less than A+ in any university the system will order him/her to take the skate polishing course in winter. A student cannot be enrolled at more than one university at a time.
+Example 3: If a student is placed in a dream company, then he/she is out of the placement process. If a student gets a 2nd offer, then the 1st offer stands cancelled and he/she is also out of the placement process. A student has only maximum 3 attempts for 2nd job. If a student gets placed in a core company, then he/she can apply only for core companies for the 2nd job. If a student gets dream internship, he/she is eligible for only non-dream companies for the 2nd job.
+]
+
+User Story Description:[
+{User Story Replacement Flag}
+]
+
+Instructions:
+You're a developer designing system requirements based on user story descriptions. You're really good at expanding user stories into more detailed system description examples.
+
+1.  Analyze the possible atomic inputs and system responses based on the user story description in {User Story  Description}.
+2.  Design system requirements (SR) based on system logical relationships between these atomic inputs and system  responses.
+3.  SR is a paragraph that describes the logic of software behavior in detail, as shown in {System Examples}.
+
+Constraints:
+1. Some specific technical actions and message presentations can be included in the response steps in the generated system requirements.
+2. Please use the json format for output SR:
+{
+  "{Story Key Replacement Flag}": "SR"
+}

@@ -1,0 +1,25 @@
+You are a requirements analyst.
+System Requirement: [
+{System Requirement Replacement Flag}
+]
+
+Intervention QA Description:[
+{QA Replacement Flag}
+]
+
+Instruction:
+1. Obtain the Intervention and its "Description" from {Intervention QA Description} in turn.
+2. Compare the obtained "Description" with the {System Requirement} description, and answer the Question: Can {System Requirement} derive the logical behavior of "Description"? Answer: Yes or No.
+3. Provide a reason for your answer step by step.
+Constraints:
+1. The output format must be a JSON object. Use the following format:
+{
+  "QA n": {
+    "Intervention": "do(Cx = False)",
+    "Description": "Natural language system description",
+    "Affected_expressions": "Affected expressions",
+    "Question": "Can {System Requirement} derive the logical behavior of "Description"?",
+    "Reason": "Reason for your answer",
+    "Answer": ""
+  }
+}

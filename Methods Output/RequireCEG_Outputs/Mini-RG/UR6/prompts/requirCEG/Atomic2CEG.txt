@@ -1,0 +1,102 @@
+Cause-Effect Graph Example: [
+    System requirements Example: [A file is considered updated if the character in the first column is "A" or "B" and the second column is a number.  If the first character is wrong, the message x should be printed.  If the second column is not a number, the message y should be printed.]
+
+    Atomic C and E Example:
+    [
+        C1: The character in column 1 is 'A',
+        C2: The character in column 1 is "B",
+        C3: The character in column 2 is a number,
+        E1: The file update is complete,
+        E2: Prints the message x,
+        E3: Print the message y
+    ]
+
+    Cause-Effect Graph Example: [
+        "Exp 1": AND (OR (C1, C2), C3) = E1,
+        "Exp 2": NOT (C3) = E3,
+        "Exp 3": NOT (OR (C1, C2)) = E2,
+        "Exp 4": EXC (C1, C2)
+    ]
+]
+
+Features of Cause-Effect Graph:
+[
+    The Causal Effect Graph consists of condition (Cause) nodes (C) and action (Effect) nodes (E) as well as relation edges (Relationship between atomic conditions  and atomic actions) and restriction relation edges (Restrictions between conditions/actions).
+    
+    Expressions with an equal sign (Relate C to E):
+    1. DIR (Identity): If the condition (C) occurs, the action (E) is occur. If the condition does not occur, the action is not occur too.
+        - Format: "Exp X": "DIR (C1) = E1"
+        - Constraint: Must have one or more C.
+        - Example: "Exp 1": "DIR (C1) = E1"
+
+    2. AND: If all the conditions (Cs) occur, the action (E) occurs. If any condition (Cs) does not occur, the action (E) does not occur.
+        - Format: "Exp X": "AND (C3, C4) = E3"
+        - Constraint: Must have two or more Cs.
+        - Example: "Exp 3": "AND (C3, C4) = E3"
+
+    3. OR: If any one of the conditions (Cs) occurs, the action (E) occurs. If none occur, the action (E) does not occur.
+        - Format: "Exp X": "OR (C5, C6) = E4"
+        - Constraint: Must have two or more Cs.
+        - Example: "Exp 4": "OR (C5, C6) = E4"
+    
+    4. NOT: If the condition (C) occurs, the action (E) does not occur. If the condition does not occur, the action is occur.
+        - Format: "Exp X": "NOT (C2) = E2"
+        - Constraint: Must have one or more C.
+        - Example: "Exp 2": "NOT (C2) = E2"
+
+    Expressions without an equal sign (Restrictions between C and C):
+    1. EXC (Mutual Exclusion): The conditions (Cs) cannot occur simultaneously, but they can fail to occur simultaneously.
+        - Format: "Exp X": "EXC (C9, C10)"
+        - Constraint: Must have two or more Cs.
+        - Example: "Exp 6": "EXC (C9, C10)"
+
+    2. INC (Contains): At least one of the specified conditions (Cs) must occur.
+        - Format: "Exp X": "INC (C11, C12)"
+        - Constraint: Must have two or more Cs.
+        - Example: "Exp 7": "INC (C11, C12)"
+
+    3. REQ (Required Dependency): If the first condition occur and the second condition is occured at same time.
+        - Format: "Exp X": "REQ (C7, C8)"
+        - Constraint: Must have two or more Cs.
+        - Example: "Exp 5": "REQ (C7, C8)"
+
+    4. XOR (Exclusive OR): In the conditions (Cs), at least one must occur.
+        - Format: "Exp X": "XOR (C13, C14)"
+        - Constraint: Must have two or more Cs.
+        - Example: "Exp 8": "XOR (C13, C14)"
+
+    Expressions without an equal sign (Restrictions between E and E):
+    1. MSK (Masking Dependency): If first action (E) occurs, second action (E) specified action must not occur. If the first action (E) does not occur, the second action (E) may or may not occur.
+        - Format: "Exp X": "MSK (E5, E6)"
+        - Constraint: Must have two or more Es.
+        - Example: "Exp 9": "MSK (E5, E6)"
+]
+
+System Requirement: [
+{System Requirement Replacement Flag}
+]
+
+Atomic C and E: [
+{Atomic Replacement Flag}
+]
+
+Instruction:
+1. You're a software testing analyst. 
+2. Given {Atomic C and E}, obtain atomic conditions (C) and actions (E), and select the relationship and restriction relationship in {Features of Cause-Effect Graph} consist with the description in {System Requirement}.
+3. If you want to select "NOT" relationship, be sure to distinguish it from "DIR (Identity)" carefully. NOT is C happens E does not happen, and DIR is C happens E happens.
+4. If you want to select "REQ" restriction, make sure that the first symbol depends on the second one, and they must both occur at the same time. Don't mess with the order.
+5. Please reference Exp format in {Features of Cause-Effect Graph}, build a Cause-Effect Graph.
+6. You can build Cause-Effect Graph depending on your {System Requirement}, but be careful that the expressions are correct.
+
+Constraints:
+1. The generated Cause-Effect Graph must obey the "Constraint" in {Features of Cause-Effect Graph}.
+2. Only symbols and meanings that appear in {Atomic C and E} can be used.
+3. It is guaranteed that all symbols of {Atomic C and E} appear at least once in the expression.
+4. If the expression contains an equal sign, there is only one node to the right of the expression.
+5. Two occurrences of the same atomic condition or action in the same formula are not allowed, for example DIR (C2,C2) = E3, AND (C3, C4, C3) are not allowed.
+6. Please use the json format for the output Cause-Effect Graph:
+{
+  "Exp 1": "...",
+  "Exp 2": "...",
+  "Exp n": "..."
+}

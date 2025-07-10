@@ -1,0 +1,4 @@
+1. As a resident, I want to see special waste drop-off sites on a map near my location so that I can properly dispose of special waste items.
+2. As a mobile user, I want to receive clear error messages when GPS or internet is not working so that I understand why the service is unavailable.
+3. As a user in an area without drop-off sites, I want to be notified that no sites are available so that I can seek alternative disposal methods.
+4. As an environmentally conscious person, I want to easily find the nearest drop-off location so that I can minimize travel time and environmental impact.

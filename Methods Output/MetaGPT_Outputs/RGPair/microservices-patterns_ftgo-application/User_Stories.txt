@@ -1,0 +1,4 @@
+1. As a consumer, I want to place an order with my credit card so that I can purchase food from restaurants.
+2. As a consumer, I want to modify my existing order so that I can update my food preferences before preparation.
+3. As a consumer, I want to cancel my order so that I can stop the process if needed.
+4. As a restaurant owner, I want to receive authorized order events so that I can start preparing valid orders.

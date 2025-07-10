@@ -1,0 +1,23 @@
+You are a requirements analyst.
+Atomic C and E: [
+{Atomic Replacement Flag}
+]
+
+Logical Expressions: [
+{CEG Replacement Flag}
+]
+
+Instructions:
+Step 1: Intervene on conditional nodes (Cx) according to the order of expressions in the {Logical Expressions}.  By default, all condition nodes (Cx) are set to True.  Apply the intervention by setting each condition node to False in turn, represented as do(Cx=False).
+Step 2: After each intervention on a condition (Cx), identify all {Logical Expressions} that depend on that condition.  Infer the effects of the intervention on all related expressions by analyzing how setting Cx=False impacts their truth value.  This step is crucial as it determines which expressions are no longer valid after the intervention.
+Step 3: For each affected logical expression, use the corresponding meanings of conditions (C) and actions (E) from {Atomic C and E}.  Replace each affected expression with its specific meaning and generate a comprehensive natural language system description that reflects all changes caused by the intervention.
+
+Constraints:
+1. Ensure that all affected expressions are identified and replaced with their corresponding meanings from {Atomic C and E}.
+2. The final output should contain a detailed natural language system description that accurately represents the impact of each intervention on all logical expressions.
+3. The output format must be a JSON object where each QA step corresponds to an intervention. Use the following format:
+{
+  "QA n": {
+    "do(Cx = False)": "Natural language system description"
+  }
+}

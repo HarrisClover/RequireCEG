@@ -1,0 +1,4 @@
+1. As a new user, I want to create an account and log in so that I can access the drag-and-drop functionality.
+2. As an authenticated user, I want to interact with numbered buttons in various combinations so that I can test different scenarios.
+3. As an authenticated user, I want to perform drag-and-drop operations and receive immediate feedback so that I can confirm successful interactions.
+4. As a system tester, I want to execute multiple scenarios simultaneously to verify system performance and responsiveness.

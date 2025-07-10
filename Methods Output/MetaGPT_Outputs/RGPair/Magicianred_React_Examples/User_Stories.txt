@@ -1,0 +1,4 @@
+1. As a first-time visitor, I want to easily navigate through different sections of the website so that I can quickly find the information I need.
+2. As a potential client, I want to submit a contact form with my details so that I can get in touch with the company.
+3. As a mobile user, I want to access all website features seamlessly so that I can use the website effectively on my smartphone.
+4. As a user encountering an error, I want to see clear error messages so that I understand what went wrong and how to proceed.

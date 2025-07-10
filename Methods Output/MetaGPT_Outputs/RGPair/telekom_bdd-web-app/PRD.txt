@@ -1,0 +1,208 @@
+# Collective Taxi Reservation System PRD
+
+## 1. Project Overview
+
+### 1.1 Project Information
+- **Project Name**: collective_taxi_system
+- **Programming Language**: React, JavaScript, Tailwind CSS
+- **Version**: 1.0
+
+### 1.2 Original Requirements
+The system shall provide a login and registration feature that allows users to access their existing accounts or create new ones to make reservations for collective taxis. Users must be able to log in successfully with valid credentials and receive appropriate error messages when login attempts with invalid data are made. The registration process must allow users to fill in their personal details, and the system shall validate the input to ensure that invalid data is correctly handled with corresponding feedback. Upon successful registration, users should be redirected to the login page with a success message displayed. Furthermore, logged-in users shall have the ability to make reservations for shared taxi rides, with real-time updates on ticket prices based on the number of passengers and specified time periods. The system must ensure that reservations are not possible during times with no available offers. Additionally, the application should handle scenarios where users attempt to reserve rides with JavaScript disabled, providing appropriate messages and fallbacks. The solution must be robust enough to maintain distinct user sessions across different test environments, ensuring consistent behavior regardless of session states or potential application errors.
+
+### 1.3 Product Goals
+1. Create a secure and user-friendly authentication system for collective taxi reservations
+2. Implement a reliable real-time pricing and booking system for shared rides
+3. Ensure system robustness across different environments and scenarios
+
+## 2. User Stories
+
+1. As a new user, I want to create an account with my personal details so that I can start booking shared taxi rides
+2. As a registered user, I want to log in securely to access my account and make reservations
+3. As a customer, I want to see real-time pricing updates based on passenger count and time periods so that I can make informed booking decisions
+4. As a user with JavaScript disabled, I want to still be able to use basic system features so that I can make reservations
+5. As a frequent user, I want my session to remain secure and consistent across different environments so that I can trust the system with my bookings
+
+## 3. Competitive Analysis
+
+```mermaid
+quadrantChart
+    title "Ride-sharing Platform Comparison"
+    x-axis "Low Feature Set" --> "High Feature Set"
+    y-axis "Low User Experience" --> "High User Experience"
+    quadrant-1 "Market Leaders"
+    quadrant-2 "Feature Rich"
+    quadrant-3 "Basic Services"
+    quadrant-4 "User Friendly"
+    "Uber Pool": [0.9, 0.85]
+    "Lyft Shared": [0.85, 0.8]
+    "Via": [0.75, 0.7]
+    "Didi Hitch": [0.8, 0.65]
+    "BlaBlaCar": [0.7, 0.75]
+    "Local Taxi Apps": [0.4, 0.45]
+    "Our Target Product": [0.8, 0.9]
+```
+
+### Competition Overview
+
+1. **Uber Pool**
+   - Pros:
+     * Extensive network coverage
+     * Robust pricing algorithm
+     * Strong security measures
+   - Cons:
+     * Higher prices
+     * Limited flexibility in matching
+
+2. **Lyft Shared**
+   - Pros:
+     * User-friendly interface
+     * Efficient matching system
+   - Cons:
+     * Limited availability
+     * Longer wait times
+
+3. **Via**
+   - Pros:
+     * Specialized in shared rides
+     * Competitive pricing
+   - Cons:
+     * Limited market presence
+     * Basic feature set
+
+4. **Didi Hitch**
+   - Pros:
+     * Advanced matching algorithm
+     * Comprehensive safety features
+   - Cons:
+     * Regional limitations
+     * Complex interface
+
+5. **BlaBlaCar**
+   - Pros:
+     * Strong community features
+     * Long-distance options
+   - Cons:
+     * Limited to planned trips
+     * Less spontaneous booking options
+
+## 4. Technical Requirements
+
+### 4.1 Authentication System
+
+#### P0 (Must-have)
+- User registration with email verification
+- Secure login with rate limiting
+- Password recovery system
+- Input validation for all forms
+- CSRF protection
+- Session management across environments
+
+#### P1 (Should-have)
+- Social media login integration
+- Remember me functionality
+- Multi-factor authentication
+- Password strength indicators
+
+#### P2 (Nice-to-have)
+- Biometric authentication
+- Single sign-on capabilities
+- Login history tracking
+
+### 4.2 Reservation System
+
+#### P0 (Must-have)
+- Real-time price calculation
+- Available time slot display
+- Booking confirmation system
+- Basic functionality without JavaScript
+- Error handling for unavailable times
+
+#### P1 (Should-have)
+- Ride sharing matching algorithm
+- Waiting list feature
+- Cancellation management
+- Price prediction for future bookings
+
+#### P2 (Nice-to-have)
+- Regular route scheduling
+- Favorite routes saving
+- Group booking feature
+
+## 5. UI Design Draft
+
+### 5.1 Login Page Layout
+```mermaid
+graph TD
+    A[Header] --> B[Login Form]
+    B --> C[Email Input]
+    B --> D[Password Input]
+    B --> E[Login Button]
+    B --> F[Forgot Password Link]
+    B --> G[Register Link]
+    H[Footer] --> I[Support Links]
+```
+
+### 5.2 Registration Page Layout
+```mermaid
+graph TD
+    A[Header] --> B[Registration Form]
+    B --> C[Personal Information]
+    C --> D[Name Input]
+    C --> E[Email Input]
+    C --> F[Password Input]
+    C --> G[Confirm Password]
+    B --> H[Submit Button]
+    I[Footer] --> J[Terms and Conditions]
+```
+
+### 5.3 Booking Interface Layout
+```mermaid
+graph TD
+    A[Header] --> B[Search Form]
+    B --> C[Location Inputs]
+    B --> D[Date/Time Selection]
+    B --> E[Passenger Count]
+    F[Results] --> G[Available Rides]
+    G --> H[Price Display]
+    G --> I[Booking Button]
+```
+
+## 6. Error Handling Specifications
+
+### 6.1 Authentication Errors
+- Invalid credentials: Clear error message with retry option
+- Account locked: Temporary lockout with countdown
+- Registration validation: Field-specific error messages
+- Session timeout: Automatic redirect to login
+
+### 6.2 Reservation Errors
+- No available slots: Alternative time suggestions
+- Price calculation failure: Fallback to base pricing
+- Booking conflict: Clear explanation and alternatives
+- System unavailable: Graceful degradation to basic version
+
+## 7. Open Questions
+
+1. What is the maximum number of passengers allowed per shared ride?
+2. Should we implement a rating system for co-passengers?
+3. What is the cancellation policy and associated fees?
+4. How will we handle multiple overlapping bookings?
+5. What are the specific requirements for different test environments?
+
+## 8. Success Metrics
+
+1. User Authentication
+- Registration completion rate > 80%
+- Login success rate > 95%
+- Password reset completion rate > 90%
+
+2. Booking System
+- Booking completion rate > 85%
+- Real-time price calculation accuracy > 98%
+- System uptime > 99.9%
+
+3. Performance
+- Page load time < 3 seconds
+- Booking confirmation time < 5 seconds
+- Session management reliability > 99.5%

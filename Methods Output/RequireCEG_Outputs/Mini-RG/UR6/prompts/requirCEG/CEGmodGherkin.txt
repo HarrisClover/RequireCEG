@@ -1,0 +1,130 @@
+You're a software testing analyst. 
+
+Logical Expressions: [
+{CEG Replacement Flag}
+]
+
+Atomic C and E: [
+{Atomic Replacement Flag}
+]
+
+Gherkin Description: [
+{PreGherkin Replacement Flag}
+]
+
+Features of Cause-Effect Graph:
+[
+    The Causal Effect Graph consists of condition (Cause) nodes (C) and action (Effect) nodes (E) as well as relation edges (Relationship between atomic conditions  and atomic actions) and restriction relation edges (Restrictions between conditions/actions).
+    
+    Expressions with an equal sign (Relate C to E):
+    1. DIR (Identity): If the condition (C) occurs, the action (E) is occur. If the condition does not occur, the action is not occur too.
+        - Format: "Exp X": "DIR (C1) = E1"
+        - Constraint: Must have one or more C.
+        - Example: "Exp 1": "DIR (C1) = E1"
+
+    2. AND: If all the conditions (Cs) occur, the action (E) occurs. If any condition (Cs) does not occur, the action (E) does not occur.
+        - Format: "Exp X": "AND (C3, C4) = E3"
+        - Constraint: Must have two or more Cs.
+        - Example: "Exp 3": "AND (C3, C4) = E3"
+
+    3. OR: If any one of the conditions (Cs) occurs, the action (E) occurs. If none occur, the action (E) does not occur.
+        - Format: "Exp X": "OR (C5, C6) = E4"
+        - Constraint: Must have two or more Cs.
+        - Example: "Exp 4": "OR (C5, C6) = E4"
+    
+    4. NOT: If the condition (C) occurs, the action (E) does not occur. If the condition does not occur, the action is occur.
+        - Format: "Exp X": "NOT (C2) = E2"
+        - Constraint: Must have one or more C.
+        - Example: "Exp 2": "NOT (C2) = E2"
+
+    Expressions without an equal sign (Restrictions between C and C):
+    1. EXC (Mutual Exclusion): The conditions (Cs) cannot occur simultaneously, but they can fail to occur simultaneously.
+        - Format: "Exp X": "EXC (C9, C10)"
+        - Constraint: Must have two or more Cs.
+        - Example: "Exp 6": "EXC (C9, C10)"
+
+    2. INC (Contains): At least one of the specified conditions (Cs) must occur.
+        - Format: "Exp X": "INC (C11, C12)"
+        - Constraint: Must have two or more Cs.
+        - Example: "Exp 7": "INC (C11, C12)"
+
+    3. REQ (Required Dependency): If the first condition occur and the second condition is occured at same time.
+        - Format: "Exp X": "REQ (C7, C8)"
+        - Constraint: Must have two or more Cs.
+        - Example: "Exp 5": "REQ (C7, C8)"
+
+    4. XOR (Exclusive OR): In the conditions (Cs), at least one must occur.
+        - Format: "Exp X": "XOR (C13, C14)"
+        - Constraint: Must have two or more Cs.
+        - Example: "Exp 8": "XOR (C13, C14)"
+
+    Expressions without an equal sign (Restrictions between E and E):
+    1. MSK (Masking Dependency): If first action (E) occurs, second action (E) specified action must not occur. If the first action (E) does not occur, the second action (E) may or may not occur.
+        - Format: "Exp X": "MSK (E5, E6)"
+        - Constraint: Must have two or more Es.
+        - Example: "Exp 9": "MSK (E5, E6)"
+]
+
+Instruction:
+Following tasks one by one:
+1. Use {Logical Expressions} combined with {Atomic C and E} and {Features of Cause-Effect Graph} review each "Scenario" and rewrite they are consistent with the {Logical Expressions} in the {Gherkin Description}. 
+2. If there are "Logic Exp" in {Logical Expressions} that are not described by {Gherkin Description} add the new scenarios consistent with "Logic Exp".
+3. Generate the modified Gherkin following constraints. 
+
+Constraints:
+1. Modified any unclear logic or ambiguous acceptance criteria in {Gherkin Description},  ensuring the scenarios have clear definitions and specific acceptance conditions!!
+2. If included, the Scenario Outline is at the end of all scenarios.
+3. Ensure that all {Logical Expressions} appear in "Logic Exp".
+4. The format must be a JSON object. Use the following format, and do not add the unknown key:
+{
+  "{Story Key Replacement Flag}": {
+    "Feature": "{Story Key Replacement Flag}",
+    "Narrative": {
+      "As": "[role]",
+      "I want": "[feature: something, requirement]",
+      "So that": "[benefit: achieve some business goal]"
+    },
+    "Background": {
+      "Given": "[some condition]",
+      "And": "[one more thing]"
+    },
+    "Scenarios": [
+      {
+        "Scenario": "Scenario 1: Title",
+        "Given": "[context]",
+        "And": "[some more context]",
+        "When": "[event]",
+        "Then": "[outcome]",
+        "And": "[another outcome]"
+      },
+      {
+        "Scenario": "Scenario n: Title",
+        "Given": "[some condition]",
+        "When": "[event]",
+        "Then": "[outcome]"
+      },
+      {
+        "Scenario Outline": "Scenario Outline: Title",
+        "Given": something is ..."<something>"..,
+        "And": " something..<number> <thing>"..,
+        "When": some events..<event>"..,
+        "Then": something..<outcome>"..,
+        "Examples": [
+          {
+            "Headers": ["something", "number", "thing", "event", "outcome"],
+            "Rows": [
+              ["...", "...", "...", "...", "..."],
+              ["...", "...", "...", "...", "..."],
+              [Show more creative concrete examples]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Logic Exp": {"Exp n": {
+    "Scenario": "[Scenarios Select dynamically from "Scenarios" above]",
+    "Logic Exp": "[Select in {Logical Expressions}]",
+  }
+}
+}

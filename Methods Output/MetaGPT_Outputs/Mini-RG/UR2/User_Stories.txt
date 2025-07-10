@@ -1,0 +1,4 @@
+1. As a new user, I want to create an account so that I can access the system.
+2. As a registered user, I want to create my profile so that I can personalize my presence.
+3. As a returning user, I want to log in to my account so that I can manage my profile.
+4. As a forgetful user, I want to recover my account credentials so that I can regain access.

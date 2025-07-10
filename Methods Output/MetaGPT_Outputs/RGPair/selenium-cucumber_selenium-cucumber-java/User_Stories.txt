@@ -1,0 +1,3 @@
+1. As a QA engineer, I want to automate the Homerunner platform login flow so that I can verify the form submission process works correctly.
+2. As a test automation engineer, I want to validate Gmail login/logout functionality so that I can ensure the authentication process is working as expected.
+3. As a QA tester, I want to automate Wikipedia search functionality so that I can verify the search process for non-logged-in users.

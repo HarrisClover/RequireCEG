@@ -1,0 +1,5 @@
+1. As an administrator, I want to register candidates with unique identifiers so that I can maintain an organized database of participants.
+2. As a voter, I want to cast my vote for a registered candidate so that I can participate in the election process.
+3. As an administrator, I want to manage ballot states (open/closed) so that I can control the voting timeline.
+4. As an election official, I want to view voting results with proper calculations and tie-breaking rules so that I can determine winners accurately.
+5. As a system user, I want clear error messages when issues occur so that I can understand and address problems effectively.

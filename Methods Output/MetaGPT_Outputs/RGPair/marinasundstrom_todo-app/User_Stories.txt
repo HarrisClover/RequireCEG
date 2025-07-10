@@ -1,0 +1,4 @@
+1. As a busy professional, I want to quickly add new tasks so that I can capture my responsibilities before I forget them.
+2. As a task manager, I want to view my complete todo list so that I can understand my pending workload.
+3. As a user, I want to mark tasks as completed so that I can track my progress.
+4. As a student, I want to organize my assignments and deadlines so that I can manage my study schedule effectively.

@@ -1,0 +1,4 @@
+1. As a user, I want to add new todo items to my list so that I can keep track of my tasks.
+2. As a user, I want to delete completed or unnecessary items so that my list stays relevant and organized.
+3. As a user, I want to see the total number of items in my list so that I can manage my workload effectively.
+4. As a user, I want clear feedback after each action so that I know my changes were successful.

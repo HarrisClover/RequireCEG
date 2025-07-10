@@ -1,0 +1,5 @@
+1. As an adult user, I want to verify my age during registration so that I can access full transaction capabilities.
+2. As an adult user, I want to send and withdraw money without limits so that I can manage my finances flexibly.
+3. As a non-adult user, I want to send small amounts of money (up to 20 euros) so that I can make basic transactions.
+4. As a parent, I want to ensure my child cannot withdraw money or send large amounts so that their finances remain protected.
+5. As a business owner, I want to verify the age of users so that transactions comply with regulations.

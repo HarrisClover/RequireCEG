@@ -1,0 +1,5 @@
+1. As an administrator, I want to manage user roles and permissions so that I can control access to different parts of the system.
+2. As a privileged user, I want to create and edit various content types (documents, images, contacts) so that I can maintain the website content.
+3. As an administrator, I want to configure taxonomies and menu structures so that I can organize content effectively.
+4. As an anonymous user, I want to easily navigate the site and access public content so that I can find relevant information.
+5. As a content editor, I want to add metadata to content items so that they are properly categorized and searchable.

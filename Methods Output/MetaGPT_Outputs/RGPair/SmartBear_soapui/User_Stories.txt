@@ -1,0 +1,4 @@
+1. As a QA engineer, I want to create mock services that can return different responses in sequence so that I can test various scenarios without changing the mock configuration.
+2. As an API developer, I want to manage OAuth 2.0 tokens automatically so that I can focus on testing endpoints without manually refreshing expired tokens.
+3. As a test automation engineer, I want to create script-based response logic so that I can simulate complex backend behaviors.
+4. As a SOAP service tester, I want to manage SOAP mock services similarly to REST services so that I can maintain consistency in testing approaches.

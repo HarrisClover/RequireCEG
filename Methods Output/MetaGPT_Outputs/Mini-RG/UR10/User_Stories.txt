@@ -1,0 +1,4 @@
+1. As an administrator, I want to add IP addresses to a blocking list so that I can prevent malicious users from accessing the website.
+2. As an administrator, I want to manage (view/edit/delete) blocked IP addresses so that I can maintain an up-to-date blocking list.
+3. As a system, I want to automatically check user IP addresses against the blocking list so that blocked users are denied access.
+4. As an administrator, I want to see the history of blocked IP activities so that I can monitor blocking effectiveness.

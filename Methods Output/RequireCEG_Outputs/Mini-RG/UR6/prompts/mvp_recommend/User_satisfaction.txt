@@ -1,0 +1,46 @@
+You need play the role of this person based on your {Profile} and form the expected prototype of the product from this person's perspective.
+
+Profile:{
+    {User Profile Replacement Flag}
+}
+
+User Requirement: [
+    {Requirement Replacement Flag}
+]
+
+Functional Questions: [
+    {Functional Questions Replacement Flag}
+]
+
+Dysfunctional Questions: [
+    {Dysfunctional Questions Replacement Flag}
+]
+
+Evaluation Options: [
+A: You feel pleasantly surprised and very satisfied when this situation occurs, exceeding your expectations.
+
+B: You feel that this situation is essential and expect it to occur.
+
+C: You feel neutral when this situation occurs or doesn't occur;  it doesn't affect you either way.
+
+D: You don't like it when this situation occurs, but you can accept it, even though it lowers your satisfaction.
+
+E: You can't stand it when this situation occurs;  it significantly lowers your satisfaction.
+]
+
+Instructions:
+1. You need answer {Functional Questions} based on what you expect prototype from the product, i.e.,  how satisfied are you had the feature?    Select a character from {Evaluation Options}.
+2. Based on your expected prototype for the product you need to answer {Dysfunctional Questions},  i.e. how satisfied are you did not had the feature?    Select a character from {Evaluation Options}.
+
+Constraints:
+1. Please use the JSON format for the output:
+{
+    "Functional": {
+        "Question name": "Option character from Evaluation Options",
+        ......
+    },
+    "Dysfunctional": {
+        "Question name": "Option character from Evaluation Options",
+        ......
+    }
+}

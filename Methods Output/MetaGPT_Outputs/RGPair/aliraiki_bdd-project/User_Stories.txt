@@ -1,0 +1,4 @@
+1. As a shopper, I want to see my current balance and available items I can afford, so that I can make informed purchase decisions.
+2. As a customer, I want to select multiple quantities of an item (1-10), so that I can buy the exact amount I need.
+3. As a user, I want to browse through paginated product listings, so that I can easily navigate large product catalogs.
+4. As a buyer, I want to see clear product information with concise descriptions, so that I can quickly understand product features.
