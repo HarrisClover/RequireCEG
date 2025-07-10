@@ -1,4 +1,4 @@
-RequireCEG EXPERIMENT **README**
+RequireCEG **README**
 
 **Demo Video**: RequireCEG-Demo.mp4  **Demo Output**: Demo_Output
 
