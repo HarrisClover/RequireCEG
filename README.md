@@ -1,7 +1,5 @@
 RequireCEG EXPERIMENT **README**
 
-Think Like an Engineer: A Neuro-Symbolic collaboration Agent for Generative Software Requirements Elicitation and Self-Review
-
 **Demo Video**: RequireCEG-Demo.mp4  **Demo Output**: Demo_Output
 
 **Dataset**
