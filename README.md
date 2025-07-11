@@ -18,12 +18,6 @@ RequireCEG is a neuro‑symbolic collaboration agent that *thinks like an engine
 * [License](#license)
 
 ---
-<video src="[https://github.com/HarrisClover/RequireCEG/blob/main/RequireCEG-Demo.mp4](https://github.com/HarrisClover/RequireCEG/blob/main/RequireCEG-Demo.mp4)"
-       controls
-       muted
-       >
-</video>
----
 
 ## Demo
 
