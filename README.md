@@ -1,4 +1,4 @@
-# RequireCEG: A Neuro‑Symbolic Collaboration Agent for Generative Software Requirements Elicitation and Self‑Review
+# RequireCEG
 
 > Have a rough concept, a few bullet points, or a stream-of-consciousness product idea? RequireCEG helps you **clarify, organize, and elaborate your input into a detailed, review-ready software requirements blueprint**—long before anyone writes a line of code.
 
