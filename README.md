@@ -1,6 +1,5 @@
-# RequireCEG
+# RequireCEG: A Neuro‑Symbolic Collaboration Agent for Generative Software Requirements Elicitation and Self‑Review
 
-> **Think Like an Engineer:** A Neuro‑Symbolic Collaboration Agent for Generative Software Requirements Elicitation and Self‑Review
 > Have a rough concept, a few bullet points, or a stream-of-consciousness product idea? RequireCEG helps you **clarify, organize, and elaborate your input into a detailed, review-ready software requirements blueprint**—long before anyone writes a line of code.
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)  [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org)
@@ -40,18 +39,6 @@ https://github.com/user-attachments/assets/a68ff539-b728-40ad-87d8-632c8ce36740
 | 🎥 **Full Demo Video**  | [`RequireCEG-Demo.mp4`](./RequireCEG-Demo.mp4) |
 | 📄 **Demo Output** | [`Demo_Output`](./Demo_Output)                 |
 
-<details>
-<summary>Directory tree</summary>
-
-```text
-.
-├── RequireCEG-Demo.mp4
-└── Demo_Output/
-    └── ...
-```
-
-</details>
-
 ---
 
 ## Datasets
@@ -64,7 +51,7 @@ https://github.com/user-attachments/assets/a68ff539-b728-40ad-87d8-632c8ce36740
 
 ---
 
-## Method Outputs
+## Methods Outputs Comparison
 
 <details>
 <summary>Directory tree</summary>
