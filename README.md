@@ -1,4 +1,4 @@
-# RequireCEG
+# RequireCEG-From Idea to Review‑Ready Requirements
 
 > Have a rough concept, a few bullet points, or a stream-of-consciousness product idea? RequireCEG helps you **clarify, organize, and elaborate your input into a detailed, review-ready software requirements blueprint**—long before anyone writes a line of code.
 
@@ -20,7 +20,7 @@ RequireCEG is a neuro‑symbolic collaboration agent that *thinks like an engine
 ---
 
 ## 📽️ Demo
-**What you get:**
+** ✨ What you get:**
 1. **Generation Walkthrough** – watch how a high-level description is incrementally expanded into structured requirement logic.
 
 
@@ -41,7 +41,7 @@ https://github.com/user-attachments/assets/a68ff539-b728-40ad-87d8-632c8ce36740
 
 ---
 
-## Datasets
+## 📂 Datasets
 
 | Dataset         | Path                       | Contents                                                             |
 | --------------- | -------------------------- | -------------------------------------------------------------------- |
