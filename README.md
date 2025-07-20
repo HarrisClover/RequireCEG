@@ -1,5 +1,5 @@
 # RequireCEG-From Idea to Review‑Ready Requirements
-<img width="1024" height="1024" alt="icon" src="https://github.com/user-attachments/assets/dcd69564-3ed9-4d6a-b169-5d72ad790f51" />
+<img width="524" height="524" alt="icon" src="https://github.com/user-attachments/assets/dcd69564-3ed9-4d6a-b169-5d72ad790f51" />
 
 > Have a rough concept, a few bullet points, or a stream-of-consciousness product idea? RequireCEG helps you **clarify, organize, and elaborate your input into a detailed, review-ready software requirements blueprint**—long before anyone writes a line of code.
 
