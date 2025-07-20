@@ -6,7 +6,7 @@
 
 RequireCEG is a neuro‑symbolic collaboration agent that *thinks like an engineer* to automatically generate, elicit, and self‑review software requirements.
 
-> **🚧 Project Status:** The codebase is currently being cleaned up; core components will be released incrementally. Stay tuned!
+> **🚧 Project Status:** We are currently cleaning up the codebase and will release core components incrementally. Stay tuned!
 
 ---
 
@@ -32,7 +32,19 @@ https://github.com/user-attachments/assets/3c46d5e2-a10a-4aac-bb8e-e7534a0bb762
 
 https://github.com/user-attachments/assets/a68ff539-b728-40ad-87d8-632c8ce36740
 
+---
+1. **Generation Walkthrough** – follow the step‑by‑step expansion from high‑level description to structured requirements.
 
+   <p align="center">
+     <a href="./RequireCEG-Demo.mp4"><img src="https://github.com/user-attachments/assets/3c46d5e2-a10a-4aac-bb8e-e7534a0bb762" width="600" alt="Demo GIF"></a>
+   </p>
+
+2. **Sample Output Spec** – explore the complete artifact produced by RequireCEG.
+
+   <p align="center">
+     <a href="./Demo_Output"><img src="https://github.com/user-attachments/assets/a68ff539-b728-40ad-87d8-632c8ce36740" width="600" alt="Spec Screenshot"></a>
+   </p>
+---
 
 | Artifact           | File                                           |
 | ------------------ | ---------------------------------------------- |
@@ -85,6 +97,24 @@ Methods Output/
 
 ---
 
-## License
+---
+
+## 📜 Citation
+
+If you use **RequireCEG** in your research, please cite our paper:
+
+```bibtex
+@inproceedings{xxxx,
+  title     = {RequireCEG: Neuro‑Symbolic Collaboration for Automated Software Requirement Engineering},
+  author    = {xxxx},
+  booktitle = {xxxx},
+  year      = {2025},
+  publisher = {ACM},
+}
+```
+
+---
+
+📝 ## License
 
 This project is licensed under the [Apache License 2.0](LICENSE).
