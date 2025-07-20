@@ -1,6 +1,6 @@
 # RequireCEG-From Idea to Review‑Ready Requirements
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/dcd69564-3ed9-4d6a-b169-5d72ad790f51"
+  <img src="https://github.com/user-attachments/assets/e2eebf7b-912b-45f8-bfce-4beb937b0b05"
        alt="icon" width="224" height="224" />
 </p>
 
