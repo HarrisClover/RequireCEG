@@ -32,20 +32,6 @@ https://github.com/user-attachments/assets/3c46d5e2-a10a-4aac-bb8e-e7534a0bb762
 
 https://github.com/user-attachments/assets/a68ff539-b728-40ad-87d8-632c8ce36740
 
----
-1. **Generation Walkthrough** – follow the step‑by‑step expansion from high‑level description to structured requirements.
-
-   <p align="center">
-     <a href="./RequireCEG-Demo.mp4"><img src="https://github.com/user-attachments/assets/3c46d5e2-a10a-4aac-bb8e-e7534a0bb762" width="600" alt="Demo GIF"></a>
-   </p>
-
-2. **Sample Output Spec** – explore the complete artifact produced by RequireCEG.
-
-   <p align="center">
-     <a href="./Demo_Output"><img src="https://github.com/user-attachments/assets/a68ff539-b728-40ad-87d8-632c8ce36740" width="600" alt="Spec Screenshot"></a>
-   </p>
----
-
 | Artifact           | File                                           |
 | ------------------ | ---------------------------------------------- |
 | 🎥 **Full Demo Video**  | [`RequireCEG-Demo.mp4`](./RequireCEG-Demo.mp4) |
@@ -94,8 +80,6 @@ Methods Output/
 ```
 
 </details>
-
----
 
 ---
 
