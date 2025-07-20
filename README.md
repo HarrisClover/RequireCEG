@@ -22,13 +22,15 @@ RequireCEG is a neuro‑symbolic collaboration agent that *thinks like an engine
 * [License](#license)
 
 ---
-## Overview
+## 🚀 Overview
 <img width="2270" height="1369" alt="Overview" src="https://github.com/user-attachments/assets/5c818386-4708-427b-8c87-15d8465dbf49" />
-**Phase I: Requirement Elicitation.** RequireCEG extracts a hierarchical structure of software components from natural language narratives using a feature tree. For each component, it then describes behavior from both user-operational and system-response perspectives. 
 
-**Phase II: Self-Healing Causal-Effect Graph Construction.** RequireCEG constructs and iteratively refines the Causal-Effect Graphs (CEGs) based on system behavior requirements. 
+**🔎Phase I: Requirement Elicitation.** RequireCEG extracts a hierarchical structure of software components from natural language narratives using a feature tree. For each component, it then describes behavior from both user-operational and system-response perspectives. 
 
-**Phase III: Requirement Review Based on CEG.** The CEGs are then used to review the previously generated Gherkin scenarios. Any scenario that violates the CEGs logic is revised or extended accordingly.
+**🔄Phase II: Self-Healing Causal-Effect Graph Construction.** RequireCEG constructs and iteratively refines the Causal-Effect Graphs (CEGs) based on system behavior requirements. 
+
+**✅Phase III: Requirement Review Based on CEG.** The CEGs are then used to review the previously generated Gherkin scenarios. Any scenario that violates the CEGs logic is revised or extended accordingly.
+
 ---
 
 ## 📽️ Demo
