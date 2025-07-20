@@ -20,7 +20,7 @@ RequireCEG is a neuro‑symbolic collaboration agent that *thinks like an engine
 ---
 
 ## 📽️ Demo
-** ✨ What you get:**
+✨**What you get:**
 1. **Generation Walkthrough** – watch how a high-level description is incrementally expanded into structured requirement logic.
 
 
