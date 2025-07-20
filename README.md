@@ -3,6 +3,7 @@
   <img src="https://github.com/user-attachments/assets/dcd69564-3ed9-4d6a-b169-5d72ad790f51"
        alt="icon" width="224" height="224" />
 </p>
+
 > Have a rough concept, a few bullet points, or a stream-of-consciousness product idea? RequireCEG helps you **clarify, organize, and elaborate your input into a detailed, review-ready software requirements blueprint**—long before anyone writes a line of code.
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)  [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org)
