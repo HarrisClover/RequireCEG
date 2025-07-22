@@ -10,11 +10,10 @@
 
 RequireCEG is a neuro‑symbolic collaboration agent that *thinks like an engineer* to automatically generate, elicit, and self‑review software requirements.
 
+> **🚧 Project Status:** We are currently cleaning up the codebase and will release core components incrementally. Stay tuned!
+---
 ## Paper
 > Our preprint is available at: https://arxiv.org/abs/2507.14969
-
-> **🚧 Project Status:** We are currently cleaning up the codebase and will release core components incrementally. Stay tuned!
-
 ---
 
 ## Table of Contents
