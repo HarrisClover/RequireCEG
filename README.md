@@ -1,4 +1,4 @@
-# RequireCEG--From Idea to Review‑Ready Requirements
+# RequireCEG: From Idea to Review‑Ready Requirements
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e2eebf7b-912b-45f8-bfce-4beb937b0b05"
        alt="icon" width="224" height="224" />
