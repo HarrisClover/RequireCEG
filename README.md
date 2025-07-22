@@ -8,6 +8,9 @@
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)  [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org)
 
+## Paper
+Our preprint is available at: https://arxiv.org/abs/2507.14969
+
 RequireCEG is a neuro‑symbolic collaboration agent that *thinks like an engineer* to automatically generate, elicit, and self‑review software requirements.
 
 > **🚧 Project Status:** We are currently cleaning up the codebase and will release core components incrementally. Stay tuned!
@@ -102,13 +105,7 @@ Methods Output/
 If you use **RequireCEG** in your research, please cite our paper:
 
 ```bibtex
-@inproceedings{xxxx,
-  title     = {RequireCEG: Neuro‑Symbolic Collaboration for Automated Software Requirement Engineering},
-  author    = {xxxx},
-  booktitle = {xxxx},
-  year      = {2025},
-  publisher = {ACM},
-}
+
 ```
 
 ---
