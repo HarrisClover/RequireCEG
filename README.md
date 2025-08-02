@@ -111,7 +111,7 @@ If you use **RequireCEG** in your research, please cite our paper:
   journal={arXiv preprint arXiv:2507.14969},
   year={2025}
 }
-
+```
 ---
 ## 📝 License
 
