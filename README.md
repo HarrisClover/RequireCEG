@@ -105,7 +105,12 @@ If you use **RequireCEG** in your research, please cite our paper:
 
 ```bibtex
 
-```
+@article{zhang2025think,
+  title={Think Like an Engineer: A Neuro-Symbolic Collaboration Agent for Generative Software Requirements Elicitation and Self-Review},
+  author={Zhang, Sai and Xing, Zhenchang and Chen, Jieshan and Zhao, Dehai and Zhu, Zizhong and Zhang, Xiaowang and Feng, Zhiyong and Li, Xiaohong},
+  journal={arXiv preprint arXiv:2507.14969},
+  year={2025}
+}
 
 ---
 ## 📝 License
